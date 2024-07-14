@@ -9,3 +9,13 @@ p {
   border-color: aqua;
   border-radius: 20px;
 }
+.mousemove {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  border: gray solid 5px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  background-color: darkgray;
+}
