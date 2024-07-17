@@ -1,4 +1,4 @@
-p {
+h1 {
   text-transform: capitalize;
   text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -50,4 +50,22 @@ nav {
   justify-content: center;
   background-color: cyan;
   font-size: 1.5rem;
+}
+.boxpop {
+  height: 250px;
+  width: 500px;
+  background-color: darkcyan;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: -750px;
+  transition: 2s;
+}
+body {
+  overflow: auto;
+}
+p {
+  font-size: 2rem;
 }
