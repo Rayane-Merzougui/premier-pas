@@ -10,7 +10,6 @@
     <div class="box1">
       <h1>ceci est mon tout premier code qui marche enfin j'espére</h1>
     </div>
-    <div class="mousemove"></div>
     <nav>
       <ul class="navbar">
         <li>accueil</li>
@@ -26,33 +25,27 @@
       </ul>
     </div>
     <div class="boxpop"><p>inscriver vous a notre news letter</p></div>
-    <section>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam
-        asperiores fuga aliquid expedita quasi consequuntur soluta, non corrupti
-        minima temporibus minus officia cumque at tempore, possimus consectetur
-        similique maiores eos est quos. Neque perspiciatis quis molestias quasi
-        dignissimos vitae architecto doloremque ea, distinctio quo sunt quam
-        deleniti molestiae pariatur debitis beatae laudantium at iusto incidunt
-        ducimus sint nisi libero? Nesciunt laudantium totam, repellendus
-        accusantium animi distinctio eius quae quasi, voluptatum odio officia
-        recusandae. Quidem perspiciatis molestias laboriosam itaque in. Sapiente
-        itaque aut molestiae repellat? Enim iusto modi atque vel quia impedit
-        quasi, animi doloribus labore voluptate eaque facere temporibus sunt
-        corrupti vero consectetur voluptatibus corporis. Consequuntur eius
-        laboriosam molestias repellat neque nesciunt sapiente adipisci ipsum ad
-        hic, rem ullam similique aut maiores consequatur architecto facere
-        eligendi quibusdam nihil officiis doloremque. Distinctio, cumque! Nihil
-        illo dolore non officiis incidunt rem harum veniam cupiditate,
-        doloremque corporis, odio at expedita iste, deleniti impedit ex sint
-        dolorum quibusdam odit! Aperiam vel fuga architecto reiciendis tempore
-        eligendi vitae deserunt, odio quibusdam doloremque repudiandae nulla
-        optio iusto qui molestiae, recusandae, aliquid reprehenderit dolorum
-        minus. Deserunt amet sint laboriosam hic nisi! Eos, facere itaque. Animi
-        ipsum, praesentium tempore fugit, eligendi aliquam suscipit excepturi
-        cumque blanditiis, rem facilis.
-      </p>
-    </section>
+    <div class="calculator">
+      <input type="text" id="display" readonly />
+      <div class="buttons">
+        <button onclick="insert('1')">1</button>
+        <button onclick="insert('2')">2</button>
+        <button onclick="insert('3')">3</button>
+        <button onclick="insert('+')">+</button>
+        <button onclick="insert('4')">4</button>
+        <button onclick="insert('5')">5</button>
+        <button onclick="insert('6')">6</button>
+        <button onclick="insert('-')">-</button>
+        <button onclick="insert('7')">7</button>
+        <button onclick="insert('8')">8</button>
+        <button onclick="insert('9')">9</button>
+        <button onclick="insert('*')">*</button>
+        <button onclick="clearDisplay()">C</button>
+        <button onclick="insert('0')">0</button>
+        <button onclick="calculate()">=</button>
+        <button onclick="insert('/')">/</button>
+      </div>
+    </div>
     <script src="./index.js"></script>
   </body>
 </html>

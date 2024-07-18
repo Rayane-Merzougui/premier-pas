@@ -1,10 +1,5 @@
-const mousemove = document.querySelector(".mousemove");
 const navbar = document.querySelector("nav");
 const boxpop = document.querySelector(".boxpop");
-window.addEventListener("mousemove", (e) => {
-  mousemove.style.left = e.pageX + "px";
-  mousemove.style.top = e.pageY + "px";
-});
 window.addEventListener("scroll", () => {
   if (window.scrollY > 120) {
     navbar.style.top = 0;
@@ -13,3 +8,19 @@ window.addEventListener("scroll", () => {
     navbar.style.top = -50 + "px";
   }
 });
+function insert(value) {
+  document.getElementById("display").value += value;
+}
+
+function clearDisplay() {
+  document.getElementById("display").value = "";
+}
+
+function calculate() {
+  try {
+    let result = eval(document.getElementById("display").value);
+    document.getElementById("display").value = result;
+  } catch (error) {
+    alert("Expression invalide");
+  }
+}
