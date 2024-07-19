@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
     <title>Premier pas</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -24,7 +30,10 @@
         <li class="boit">boit 3</li>
       </ul>
     </div>
-    <div class="boxpop"><p>inscriver vous a notre news letter</p></div>
+    <div class="boxpop">
+      <p>inscriver vous a notre news letter</p>
+      <button id="exite">&#10006;</button>
+    </div>
     <div class="calculator">
       <input type="text" id="display" readonly />
       <div class="buttons">
@@ -46,6 +55,17 @@
         <button onclick="insert('/')">/</button>
       </div>
     </div>
+    <footer>
+      <section>
+        <p>
+          merci d'avoir visté mon site alors que c'est pas grand chose et pour
+          me contater voici mes coordonées:
+        </p>
+        <a href="https://www.instagram.com/rayane.merzougui97/?next=%2F"
+          >mon insta</a
+        >
+      </section>
+    </footer>
     <script src="./index.js"></script>
   </body>
 </html>

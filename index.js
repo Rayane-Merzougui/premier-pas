@@ -1,5 +1,6 @@
 const navbar = document.querySelector("nav");
 const boxpop = document.querySelector(".boxpop");
+const exit = document.getElementById("exite");
 window.addEventListener("scroll", () => {
   if (window.scrollY > 120) {
     navbar.style.top = 0;
@@ -7,6 +8,9 @@ window.addEventListener("scroll", () => {
   } else if (window.scrollY < 120) {
     navbar.style.top = -50 + "px";
   }
+});
+exit.addEventListener("onclick", () => {
+  boxpop.style.right = -1500 + "px";
 });
 function insert(value) {
   document.getElementById("display").value += value;
