@@ -4,14 +4,14 @@ const exit = document.getElementById("exite");
 window.addEventListener("scroll", () => {
   if (window.scrollY > 120) {
     navbar.style.top = 0;
-    boxpop.style.right = 50 + "px";
   } else if (window.scrollY < 120) {
     navbar.style.top = -50 + "px";
   }
 });
-exit.addEventListener("onclick", () => {
-  boxpop.style.right = -1500 + "px";
-});
+function onScroll() {
+  boxpop.style.right = 50 + "px";
+}
+window.addEventListener("scroll", onScroll);
 function insert(value) {
   document.getElementById("display").value += value;
 }
@@ -28,3 +28,10 @@ function calculate() {
     alert("Expression invalide");
   }
 }
+exit.addEventListener("click", () => {
+  boxpop.style.right = -750 + "px";
+  window.removeEventListener("scroll", onScroll);
+});
+exit.addEventListener("click", (e) => {
+  console.log(e.isTrusted);
+});
