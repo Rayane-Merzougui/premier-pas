@@ -110,3 +110,16 @@ button:hover {
   color: white;
   background-color: darkcyan;
 }
+section {
+  color: white;
+  background-color: darkslategray;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+img {
+  height: 50px;
+  width: 50px;
+  padding: 0;
+}
