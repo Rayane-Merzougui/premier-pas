@@ -146,3 +146,6 @@ img {
   color: #999;
   font-style: italic;
 }
+#boit1 {
+  transition: 0.5s;
+}

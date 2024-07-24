@@ -1,6 +1,10 @@
 const navbar = document.querySelector("nav");
 const boxpop = document.querySelector(".boxpop");
 const exit = document.getElementById("exite");
+const boit1 = document.getElementById("boit1");
+const boit2 = document.getElementById("boit2");
+const boit3 = document.getElementById("boit3");
+var click = 0;
 window.addEventListener("scroll", () => {
   if (window.scrollY > 120) {
     navbar.style.top = 0;
@@ -32,6 +36,16 @@ exit.addEventListener("click", () => {
   boxpop.style.right = -750 + "px";
   window.removeEventListener("scroll", onScroll);
 });
-exit.addEventListener("click", (e) => {
-  console.log(e.isTrusted);
+boit1.addEventListener("click", () => {
+  click++;
+  if (click === 1) {
+    boit1.style.backgroundColor = "cadetblue";
+  } else if (click === 2) {
+    boit1.style.backgroundColor = "darkslategray";
+  } else if (click === 3) {
+    boit1.style.backgroundColor = "lightblue";
+  } else if (click === 4) {
+    click = 0;
+    boit1.style.backgroundColor = "cyan";
+  }
 });
