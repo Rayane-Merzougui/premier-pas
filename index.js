@@ -5,6 +5,7 @@ const boit1 = document.getElementById("boit1");
 const boit2 = document.getElementById("boit2");
 const boit3 = document.getElementById("boit3");
 var click = 0;
+var click2 = 0;
 window.addEventListener("scroll", () => {
   if (window.scrollY > 120) {
     navbar.style.top = 0;
@@ -49,3 +50,23 @@ boit1.addEventListener("click", () => {
     boit1.style.backgroundColor = "cyan";
   }
 });
+function bigsmal() {
+  click2++;
+  if (click2 === 1) {
+    boit2.style.height = 500 + "px";
+  }
+  if (click2 === 2) {
+    boit2.style.width = 500 + "px";
+    boit2.style.height = 50 + "px";
+  }
+  if (click2 === 3) {
+    boit2.style.height = 500 + "px";
+    boit2.style.height = 500 + "px";
+  }
+  if (click2 === 4) {
+    click2 = 0;
+    boit2.style.width = 200 + "px";
+    boit2.style.height = 200 + "px";
+  }
+}
+boit2.addEventListener("click", bigsmal);
