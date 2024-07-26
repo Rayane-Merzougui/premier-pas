@@ -6,6 +6,7 @@ const boit2 = document.getElementById("boit2");
 const boit3 = document.getElementById("boit3");
 var click = 0;
 var click2 = 0;
+var click3 = 0;
 window.addEventListener("scroll", () => {
   if (window.scrollY > 120) {
     navbar.style.top = 0;
@@ -70,3 +71,16 @@ function bigsmal() {
   }
 }
 boit2.addEventListener("click", bigsmal);
+boit3.addEventListener("click", () => {
+  click3++;
+  if (click3 === 1) {
+    boit3.style.transform = "rotate(80deg)";
+  } else if (click3 === 2) {
+    boit3.style.transform = "rotate(160deg)";
+  } else if (click3 === 3) {
+    boit3.style.transform = "rotate(240deg)";
+  } else if (click3 === 4) {
+    click3 = 0;
+    boit3.style.transform = "rotate(360deg)";
+  }
+});

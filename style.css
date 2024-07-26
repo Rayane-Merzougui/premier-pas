@@ -16,6 +16,7 @@ nav {
   height: 50px;
   background-color: aquamarine;
   transition: 0.6s;
+  z-index: 1000;
 }
 .navbar {
   display: flex;
@@ -148,4 +149,10 @@ img {
 }
 #boit1 {
   transition: 0.5s;
+}
+#boit2 {
+  transition: 0.7s;
+}
+#boit3 {
+  transition: 0.7s;
 }
