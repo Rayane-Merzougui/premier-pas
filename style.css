@@ -116,9 +116,13 @@ section {
   color: white;
   background-color: darkslategray;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "tx   tx"
+    "ic1  ic2";
 }
 img {
   height: 50px;
@@ -155,4 +159,13 @@ img {
 }
 #boit3 {
   transition: 0.7s;
+}
+#ic1 {
+  grid-area: ic1;
+}
+#ic2 {
+  grid-area: ic2;
+}
+#tx {
+  grid-area: tx;
 }
