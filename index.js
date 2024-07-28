@@ -72,15 +72,5 @@ function bigsmal() {
 }
 boit2.addEventListener("click", bigsmal);
 boit3.addEventListener("click", () => {
-  click3++;
-  if (click3 === 1) {
-    boit3.style.transform = "rotate(80deg)";
-  } else if (click3 === 2) {
-    boit3.style.transform = "rotate(160deg)";
-  } else if (click3 === 3) {
-    boit3.style.transform = "rotate(240deg)";
-  } else if (click3 === 4) {
-    click3 = 0;
-    boit3.style.transform = "rotate(360deg)";
-  }
+  boit3.innerHTML = "<h2>boit 3</h2><p>vous voyer</p>";
 });
