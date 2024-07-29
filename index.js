@@ -4,6 +4,7 @@ const exit = document.getElementById("exite");
 const boit1 = document.getElementById("boit1");
 const boit2 = document.getElementById("boit2");
 const boit3 = document.getElementById("boit3");
+const voila = document.getElementById("voila");
 var click = 0;
 var click2 = 0;
 var click3 = 0;
@@ -72,5 +73,6 @@ function bigsmal() {
 }
 boit2.addEventListener("click", bigsmal);
 boit3.addEventListener("click", () => {
-  boit3.innerHTML = "<h2>boit 3</h2><p>vous voyer</p>";
+  voila.style.color = "black";
+  voila.style.top = 0;
 });
